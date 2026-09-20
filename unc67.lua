@@ -188,7 +188,8 @@ return {
             ["detach_phone"] = 0x1A9038C, --1.74.2
             ["detach_emu"] = 0x1A1A4F7, --1.74.2
 			["fuel_phone"] = 0x1A8F104, --1.74.2
-		    ["fuel_emu"] = 0x1A19153 --1.74.2
+		    ["fuel_emu"] = 0x1A19153, --1.74.2
+		    ["swap_phone"] = 0x21FC948 --1.74.2
         },
 
 ["PATCHES"] = {
@@ -3896,20 +3897,24 @@ Echo,
             
 [34] = {
                 [1] = {
-                    [1] = { magnetTune, heavyweight, glideWings, ControlAir, TiresOfWinter },
-                    [2] = { "stock_magnet", "stock_heavyweight", "stock_glide", "stock_air_control", "stock_winter_tyres" }
+                    [1] = { magnetTune, heavyweight, glideWings, ControlAir, TiresOfWinter, helmetRollcage },
+                    [2] = { "rocketkart_magnet", "rocketkart_heavyweight", "rocketkart_glide", "rocketkart_air_control", "rocketkart_winter_tyres", "rocketkart_rollcage" }
                 },
                 [2] = {
                     [1] = { startBoost, BoostWheelie, FumeBoost, FlipBoost, JumpStockNotShock },
-                    [2] = { "stock_start_boost", "stock_wheelie_boost", "stock_fume_boost", "stock_flip_speed_boost", "stock_jump" }
+                    [2] = { "rocketkart_start_boost", "rocketkart_wheelie_boost", "rocketkart_fume_boost", "rocketkart_flip_speed_boost", "rocketkart_jump" }
                 },
                 [3] = {
                     [1] = { PerfectLandingBoost, TurboBoost, AfterBurner },
-                    [2] = { "stock_perfect_landing_boost", "stock_turbo_boost", "stock_afterburner" }
+                    [2] = { "rocketkart_perfect_landing_boost", "rocketkart_turbo_boost", "rocketkart_afterburner" }
                 },
                 [4] = {
                     [1] = { Thrusters, FuelBoost, CoinBoost },
-                    [2] = { "stock_thrusters", "stock_fuel_boost", "stock_coin_boost" }
+                    [2] = { "rocketkart_thrusters", "rocketkart_fuel_boost", "rocketkart_coin_boost" }
+				},	
+				[5] = {
+                    [1] = { Amplifier, Echo },
+                    [2] = { "rocketkart_amplifier",	"rocketkart_echo", }	
                 }
             }
           }
